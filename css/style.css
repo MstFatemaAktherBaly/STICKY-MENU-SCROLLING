@@ -4,6 +4,53 @@
     outline: 0;
     box-sizing: border-box;
 }
+/* MENU SECTION START */
+nav{
+    background: rgb(104, 30, 30);
+   }
+nav.active{
+    animation-name: fixedmenu;
+   animation-duration: .8s;
+   animation-fill-mode: forwards;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+@keyframes fixedmenu{
+from{
+   background: rgb(151, 42, 27);
+top: -100px;
+}
+to{
+   background: rgb(231, 90, 125);
+   top: 0;
+}
+}
+
+nav ul{
+display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+justify-content: flex-end;
+}
+nav ul li a{
+    display: inline-block;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: .8s;
+align-items: right;
+
+}
+nav ul li a:hover{
+    background: rgb(122, 61, 61) ;
+    border-radius: 10px;
+    color: white;
+}
+/* MENU SECTION END */
 
 /* back to top section start */
 div{
@@ -11,7 +58,7 @@ div{
 }
 #backtotop{
     position: fixed;
- background: blueviolet;
+ background: rgb(150, 32, 32);
  color: white;
  bottom: 0;
  right: 0;
