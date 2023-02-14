@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* back to top section start */
+div{
+    font-size: 20px;
+}
+#backtotop{
+    position: fixed;
+ background: blueviolet;
+ color: white;
+ bottom: 0;
+ right: 0;
+ font-size: 25px;
+ margin: 20px;
+ padding: 10px;
+ border-radius: 50%;
+ border-color: black;
+ z-index: 999999;
+ display: none;
+}
+/* back to top section end */
